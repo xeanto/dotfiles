@@ -1,0 +1,29 @@
+output HDMI-A-1 {
+	background ~/.wallpaper fill
+	mode 1920x1080@165.003Hz
+	adaptive_sync on
+	render_bit_depth 10
+	position 1080 420
+}
+
+output DP-1 {
+	background ~/.rightpaper fill
+	mode 1920x1080@60Hz
+	adaptive_sync off
+	render_bit_depth 10
+	position 3000 0
+	transform 270
+}
+
+output DP-2 {
+	background ~/.leftpaper fill
+	mode 1920x1080@144.001Hz
+	adaptive_sync on
+	render_bit_depth 10
+	position 0 0
+	transform 90
+}
+
+workspace 1 output HDMI-A-1
+workspace 2 output DP-2
+workspace 5 output DP-1
